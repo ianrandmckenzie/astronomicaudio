@@ -23,11 +23,11 @@ var paths = {
     this.src.templates   = this.src.root + '/**/*.hbs';
     this.src.javascript  = [this.src.root + '/js/**/*.js', '!' + this.src.root + '/js/libs/*.js'];
     this.src.libs        = this.src.root + '/js/libs/*.js';
-    this.src.images      = this.src.root + '/images/**/*.{jpg,jpeg,svg,png,gif}';
+    this.src.assets      = this.src.root + '/assets/**/*.{jpg,jpeg,svg,png,gif}';
     this.src.files       = this.src.root + '/*.{html,txt}';
 
     this.docs.css        = this.docs.root + '/css';
-    this.docs.images     = this.docs.root + '/images';
+    this.docs.assets     = this.docs.root + '/assets';
     this.docs.javascript = this.docs.root + '/js';
     this.docs.libs       = this.docs.root + '/js/libs';
     this.docs.fonts       = this.docs.root + '/fonts';
@@ -136,9 +136,9 @@ gulp.task('scripts', () => {
     .pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('images', () => {
-  gulp.src([paths.src.images])
-    .pipe(gulp.dest(paths.docs.images));
+gulp.task('assets', () => {
+  gulp.src([paths.src.assets])
+    .pipe(gulp.dest(paths.docs.assets));
 });
 
 gulp.task('files', () => {
@@ -146,8 +146,8 @@ gulp.task('files', () => {
     .pipe(gulp.dest(paths.docs.root));
 });
 
-watch(paths.src.images, () => {
-  gulp.start('images');
+watch(paths.src.assets, () => {
+  gulp.start('assets');
 });
 
 watch(paths.src.files, () => {
@@ -165,4 +165,4 @@ gulp.task('deploy', () => {
     .pipe(ghPages());
 });
 
-gulp.task('default', ['watch', 'serve', 'images', 'files', 'styles', 'scripts', 'templates', 'icons', 'jquery', 'popper', 'bootstrap-js']);
+gulp.task('default', ['watch', 'serve', 'assets', 'files', 'styles', 'scripts', 'templates', 'icons', 'jquery', 'popper', 'bootstrap-js']);
