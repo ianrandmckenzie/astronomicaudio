@@ -5,6 +5,7 @@
  */
 /* FONT PATH
  * -------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Lato:300|Montserrat:600,700");
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
@@ -9101,12 +9102,12 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0; }
 
 ::-moz-selection {
-  background: #302D2F;
-  color: #FFFFFF; }
+  background: #f2f3f4;
+  color: #0f0f0f; }
 
 ::selection {
-  background: #302D2F;
-  color: #FFFFFF; }
+  background: #f2f3f4;
+  color: #0f0f0f; }
 
 html,
 body {
@@ -9114,9 +9115,8 @@ body {
   height: 100%; }
 
 body {
-  font: 16px/1.35 Work Sans, San Francisco, sans-serif;
-  color: #302D2F;
-  background: #FFFFFF; }
+  font: font(default);
+  color: #0f0f0f; }
 
 a {
   color: inherit;
@@ -9135,48 +9135,92 @@ h3 {
   font-weight: 500 !important; }
 
 h1 {
-  font: 3rem/1.2 Work Sans, San Francisco, sans-serif; }
+  font: font(large); }
 
 h2 {
-  font: 3rem/1.2 Work Sans, San Francisco, sans-serif; }
+  font: font(large); }
 
 h3 {
-  font: 2.2rem/1.2 Work Sans, San Francisco, sans-serif; }
+  font: font(x-medium); }
 
 @media (min-width: 750px) {
   h1 {
-    font: 5rem/1.0 Work Sans, San Francisco, sans-serif; } }
+    font: font(x-large); } }
 
 @media (min-width: 1000px) {
   h1 {
-    font: 8rem/1.05 Work Sans, San Francisco, sans-serif; }
+    font: font(xx-large); }
   h2 {
-    font: 5rem/1.0 Work Sans, San Francisco, sans-serif; }
+    font: font(x-large); }
   h3 {
-    font: 3rem/1.2 Work Sans, San Francisco, sans-serif; } }
+    font: font(large); } }
 
-#Boilerplate {
-  width: 100%;
-  height: 100%;
-  background: #FFFFFF; }
-  #Boilerplate .wrapper {
-    margin-top: 3rem;
-    position: relative;
-    z-index: 1; }
-    #Boilerplate .wrapper:after {
-      content: "";
-      position: absolute;
-      bottom: -10%;
-      display: block;
-      width: 100%;
-      height: 50%;
-      background: #00FF9F;
-      z-index: -1; }
-    #Boilerplate .wrapper .view-gh {
-      display: inline-block;
-      color: #A0999E;
-      transition: color 0.1s; }
-      #Boilerplate .wrapper .view-gh:hover {
-        color: #FFFFFF; }
-    #Boilerplate .wrapper .title {
-      color: #302D2F; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600; }
+
+h1, h2, h4, h5, h6 {
+  font-weight: 700; }
+
+nav.navbar {
+  background-color: #000; }
+
+nav.navbar .navbar-brand, nav.navbar .collapse .navbar-nav .nav-item .nav-link {
+  color: #fff; }
+
+body {
+  background-color: #000; }
+
+section {
+  height: 100vh; }
+
+.section-1 {
+  background-image: url("../assets/astronomic-background-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.section-1 h1 {
+  margin-top: 35vh; }
+
+.section-1 .row .info-box {
+  margin-top: 40px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.65);
+  font-size: 1.5rem;
+  padding: 30px; }
+
+.btn.btn-lg.btn-cta, .btn-group-lg > .btn.btn-cta, .underline-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem; }
+
+.invisible {
+  border-color: transparent;
+  margin: 20px 0; }
+
+.btn.btn-lg.btn-cta, .btn-group-lg > .btn.btn-cta {
+  border-radius: 500px;
+  background-color: #fff; }
+
+.underline-link {
+  padding: 15px;
+  text-decoration: underline;
+  margin-left: 40px; }
+
+.underline-link:hover {
+  color: gray; }
+
+.section-2 {
+  background: linear-gradient(#333333, #4d4d4d); }
+
+.section-2 h2 {
+  margin-top: 50px;
+  color: #fff; }
+
+hr.white {
+  border-color: #fff;
+  max-width: 60%;
+  margin: 0 auto; }
