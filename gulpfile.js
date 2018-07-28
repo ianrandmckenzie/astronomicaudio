@@ -23,7 +23,7 @@ var paths = {
     this.src.templates   = this.src.root + '/**/*.hbs';
     this.src.javascript  = [this.src.root + '/js/**/*.js', '!' + this.src.root + '/js/libs/*.js'];
     this.src.libs        = this.src.root + '/js/libs/*.js';
-    this.src.assets      = this.src.root + '/assets/**/*.{jpg,jpeg,svg,png,gif}';
+    this.src.assets      = this.src.root + '/assets/**/*.{jpg,jpeg,svg,png,gif,mp3}';
     this.src.files       = this.src.root + '/*.{html,txt}';
 
     this.docs.css        = this.docs.root + '/css';
