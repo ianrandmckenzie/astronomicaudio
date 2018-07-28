@@ -25,17 +25,25 @@ h2 {
   background-position: center center;
 }
 
+.section-6 {
+  background-image: url("../assets/astronomic-background-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 .section-1 h1 {
   margin-top: 35vh;
 }
 
-.section-1 .row .info-box, .section-2 .row .info-box {
+.section-1 .row .info-box, .section-2 .row .info-box,
+.section-3 .row .info-box, .section-6 .row .info-box {
   margin-top: 40px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: $white;
   background-color: rgba(0,0,0,0.65);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding: 30px;
 }
 
@@ -86,6 +94,16 @@ h2 {
 hr.white {
   border-color: $white;
   max-width: 60%;
+  margin: 0 auto;
+}
+
+.section-6 hr.white {
+  max-width: 40%;
+}
+
+hr.white.left {
+  border-color: $white;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -179,6 +197,44 @@ audio {
   width: 200px;
 }
 
+.section-4 {
+  background: linear-gradient(to bottom, #333333, #1a1a1a);
+}
+
+.section-4 .container .row .col-md-6 {
+  margin-top: 100px;
+}
+
+.section-4 h2 {
+  margin-top: 0;
+}
+
+.about-paragraph {
+  font-size: 1.3rem;
+  color: $white;
+  margin-top: 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+footer {
+  color: $white;
+  padding: 15px;
+}
+
+footer .fa {
+  font-size: 1.8rem;
+  margin-left: 15px;
+}
+
+footer .fa:hover {
+  color: gray;
+}
+
+footer a:hover {
+  color: gray;
+}
+
 @media only screen and (max-width: 992px) {
   .btn.btn-lg.btn-cta, .underline-link {
     font-size: 1.3rem;
@@ -186,7 +242,10 @@ audio {
 }
 
 @media only screen and (max-width: 480px) {
-  .section-1 .row .info-box, .section-2 .row .info-box {
+  .section-1 .row .info-box,
+  .section-2 .row .info-box,
+  .section-3 .row .info-box,
+  .section-6 .row .info-box {
     font-size: 0.9rem;
   }
 

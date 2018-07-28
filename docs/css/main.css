@@ -5,7 +5,7 @@
  */
 /* FONT PATH
  * -------------------------- */
-@import url("https://fonts.googleapis.com/css?family=Lato:300|Montserrat:600,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300|Montserrat:400,600,700");
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
@@ -9132,7 +9132,7 @@ a {
 h1,
 h2,
 h3 {
-  font-weight: 500 !important; }
+  font-weight: 400; }
 
 h1 {
   font: font(large); }
@@ -9160,8 +9160,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: #fff; }
 
-h1, h2, h4, h5, h6 {
-  font-weight: 700; }
+h1, h2, h5, h6 {
+  font-weight: 400; }
+
+h4 {
+  font-weight: 600; }
 
 nav.navbar {
   background-color: #000; }
@@ -9184,16 +9187,23 @@ h2 {
   background-size: cover;
   background-position: center center; }
 
+.section-6 {
+  background-image: url("../assets/astronomic-background-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
 .section-1 h1 {
   margin-top: 35vh; }
 
-.section-1 .row .info-box, .section-2 .row .info-box {
+.section-1 .row .info-box, .section-2 .row .info-box,
+.section-3 .row .info-box, .section-6 .row .info-box {
   margin-top: 40px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.65);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding: 30px; }
 
 .info-box-container {
@@ -9234,6 +9244,14 @@ h2 {
 hr.white {
   border-color: #fff;
   max-width: 60%;
+  margin: 0 auto; }
+
+.section-6 hr.white {
+  max-width: 40%; }
+
+hr.white.left {
+  border-color: #fff;
+  max-width: 100%;
   margin: 0 auto; }
 
 .section-2 h3 {
@@ -9312,12 +9330,45 @@ audio {
   margin-right: auto;
   width: 200px; }
 
+.section-4 {
+  background: linear-gradient(to bottom, #333333, #1a1a1a); }
+
+.section-4 .container .row .col-md-6 {
+  margin-top: 100px; }
+
+.section-4 h2 {
+  margin-top: 0; }
+
+.about-paragraph {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-top: 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; }
+
+footer {
+  color: #fff;
+  padding: 15px; }
+
+footer .fa {
+  font-size: 1.8rem;
+  margin-left: 15px; }
+
+footer .fa:hover {
+  color: gray; }
+
+footer a:hover {
+  color: gray; }
+
 @media only screen and (max-width: 992px) {
   .btn.btn-lg.btn-cta, .btn-group-lg > .btn.btn-cta, .underline-link {
     font-size: 1.3rem; } }
 
 @media only screen and (max-width: 480px) {
-  .section-1 .row .info-box, .section-2 .row .info-box {
+  .section-1 .row .info-box,
+  .section-2 .row .info-box,
+  .section-3 .row .info-box,
+  .section-6 .row .info-box {
     font-size: 0.9rem; }
   .btn.btn-lg.btn-cta, .btn-group-lg > .btn.btn-cta, .underline-link {
     font-size: 0.8rem; }
