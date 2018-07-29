@@ -9224,7 +9224,11 @@ h2 {
 
 .btn.btn-lg.btn-cta, .btn-group-lg > .btn.btn-cta {
   border-radius: 500px;
-  background-color: #fff; }
+  background-color: #fff;
+  color: #000; }
+
+.btn.btn-lg.btn-cta:hover, .btn-group-lg > .btn.btn-cta:hover {
+  color: gray; }
 
 .underline-link {
   padding: 15px;

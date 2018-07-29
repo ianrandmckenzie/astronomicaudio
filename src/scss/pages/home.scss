@@ -70,6 +70,11 @@ h2 {
 .btn.btn-lg.btn-cta {
   border-radius: 500px;
   background-color: $white;
+  color: $black;
+}
+
+.btn.btn-lg.btn-cta:hover {
+  color: gray;
 }
 
 .underline-link {
