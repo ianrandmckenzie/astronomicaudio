@@ -14,6 +14,13 @@ section {
   min-height: 100vh;
 }
 
+.section-2,
+.section-3,
+.section-4,
+.section-5 {
+  padding-top: 100px;
+}
+
 h2 {
   margin-top: 50px;
 }
@@ -29,7 +36,7 @@ h2 {
   background-position: center center;
 }
 
-.section-6 {
+.section-5 {
   background-image: url("../assets/astronomic-background-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,7 +48,7 @@ h2 {
 }
 
 .section-1 .row .info-box, .section-2 .row .info-box,
-.section-3 .row .info-box, .section-6 .row .info-box {
+.section-3 .row .info-box, .section-5 .row .info-box {
   margin-top: 40px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -93,6 +100,7 @@ h2 {
 
 .section-2 {
   background: linear-gradient(#1a1a1a, #333333);
+  min-height: 50rem;
 }
 
 .section-2 h2 {
@@ -106,7 +114,7 @@ hr.white {
   margin: 0 auto;
 }
 
-.section-6 hr.white {
+.section-5 hr.white {
   max-width: 40%;
 }
 
@@ -132,12 +140,13 @@ hr.white.left {
 }
 
 audio {
-  margin: 15px 0;
+  margin: 15px auto;
   max-width: 90%;
 }
 
 .section-3 {
   background: linear-gradient(to bottom, #333333, #4d4d4d, #333333);
+  min-height: 50rem;
 }
 
 .section-3 .container, .section-3 .container .row {
@@ -208,10 +217,7 @@ audio {
 
 .section-4 {
   background: linear-gradient(to bottom, #333333, #1a1a1a);
-}
-
-.section-4 .container .row .col-md-6 {
-  margin-top: 100px;
+  min-height: 50rem;
 }
 
 .section-4 h2 {
@@ -224,6 +230,10 @@ audio {
   margin-top: 30px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+}
+
+.about-photo {
+  margin-bottom: 30px;
 }
 
 footer {
@@ -244,9 +254,19 @@ footer a:hover {
   color: gray;
 }
 
+.small {
+  font-size: 1rem;
+}
+
 @media only screen and (max-width: 992px) {
   .btn.btn-lg.btn-cta, .underline-link {
     font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .first.price-card {
+    margin-left: 4.16666666%;
   }
 }
 
@@ -254,8 +274,14 @@ footer a:hover {
   .section-1 .row .info-box,
   .section-2 .row .info-box,
   .section-3 .row .info-box,
-  .section-6 .row .info-box {
+  .section-5 .row .info-box,
+  .about-paragraph {
     font-size: 0.9rem;
+  }
+
+
+  .section-1 h1 {
+    margin-top: 15vh;
   }
 
   .btn.btn-lg.btn-cta, .underline-link {
